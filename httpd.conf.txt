@@ -1,0 +1,17 @@
+<VirtualHost *:80>
+    ServerName www.parcial1.com
+    DocumentRoot /var/www/parcial1
+
+    <Directory /var/www/parcial1/archivos_privados>
+        AuthType Basic
+        AuthName "Acceso restringido"
+        AuthBasicProvider PAM
+        AuthPAMService httpd-auth
+# Utiliza el nombre del archivo PAM
+        Require valid-user
+
+
+    </Directory>
+        # Redirigir a la página de error personalizada para errores 403
+    ErrorDocument 500 "Acceso denegado"
+</VirtualHost>
