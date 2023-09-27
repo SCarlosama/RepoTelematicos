@@ -307,8 +307,8 @@ service named start
 
 #### "Verificar la correcta construcción de las zonas
 ```
-named-checkzone gnitech.com /var/named/gnitech.com.fwd
-named-checkzone 100.168.192.in-addr.arpa /var/named/gnitech.com.rev
+named-checkzone pochita.com /var/named/pochita.com.fwd
+named-checkzone 100.168.192.in-addr.arpa /var/named/pochita.com.rev
 ```
 
 #### Configuración del resolv.conf `/etc/resolv.conf`
